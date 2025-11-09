@@ -1,5 +1,49 @@
+DETETIVE QUEST: SISTEMA DE EVIDÊNCIAS
+======================================
+
+DESCRICAO DO PROJETO
+--------------------
+Este projeto em C simula o sistema de mapa, coleta de pistas e julgamento de um jogo de aventura e lógica chamado Detective Quest, desenvolvido pela Enigma Studios. O objetivo é demonstrar a implementação e integração de diversas estruturas de dados para gerenciar a jogabilidade.
+
+ESTRUTURAS DE DADOS UTILIZADAS
+------------------------------
+O sistema integra três estruturas de dados principais:
+
+1. ARVORE BINARIA (Mapa da Mansão): Representa a estrutura física dos cômodos da mansão, permitindo a navegação interativa (esquerda/direita).
+
+2. ARVORE BINARIA DE BUSCA (BST): Armazena todas as pistas coletadas pelo jogador, mantendo-as organizadas em ordem alfabética.
+
+3. TABELA HASH: Associa de forma eficiente cada Pista (chave) ao seu Suspeito (valor) correspondente, permitindo a verificação rápida das evidências no julgamento final.
+
+COMO COMPILAR E EXECUTAR
+------------------------
+Este projeto é escrito em linguagem C e pode ser compilado utilizando o GCC (GNU Compiler Collection).
+
+1. Salve o Código: Salve o código-fonte C em um arquivo chamado detective_quest.c.
+2. Compile: Abra o terminal ou prompt de comando e execute o comando de compilação:
+   gcc detective_quest.c -o detective_quest
+3. Execute: Inicie o jogo e a exploração da mansão:
+   ./detective_quest
+
+INTERFACE E COMANDOS
+--------------------
+Durante a exploração da mansão, você terá três opções:
+
+| Comando | Acao
+| e | Seguir o caminho para a esquerda.
+| d | Seguir o caminho para a direita.
+| s | Sair da exploracao e iniciar a fase de Julgamento Final.
+
+Objetivo: Coletar o maximo de pistas possivel para sustentar sua acusacao final com pelo menos duas evidencias contra o suspeito.
+
+
+---
++++++++++++++++++++++++++++++++++++++++++++
+
+---
 # Desafio Detective Quest - Estruturas de Dados e Investigação
 
+---
 Bem-vindo ao desafio **Detective Quest**! Neste jogo de mistério, o jogador explora uma mansão, encontra pistas e relaciona evidências a suspeitos. Para tornar isso possível, você atuará como programador responsável por implementar toda a lógica de estruturas de dados do jogo.
 
 A **Enigma Studios**, especializada em jogos educacionais, contratou você para criar a base de funcionamento da mansão e das investigações usando **árvore binária**, **árvore de busca** e **tabela hash**.
